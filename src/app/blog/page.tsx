@@ -7,7 +7,7 @@ export default function Blog() {
       <div className="text-lg mb-8">My thoughts.</div>
 
       <div className="grid grid-cols-2 gap-2 -mx-6 mb-72 ">
-        <HoverCard>
+        <HoverCard link="">
           <div className="text-sm">Coming soon...</div>
           <div className="text-sm"></div>
         </HoverCard>
