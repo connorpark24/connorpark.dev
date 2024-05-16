@@ -10,7 +10,7 @@ export default function HoverCard({ children, link }: HoverCardProps) {
   return (
     <Link
       href={link}
-      className="p-6 rounded-lg flex flex-col gap-4 transform transition-transform duration-200 hover:scale-105 hover:bg-gray-50"
+      className="p-6 rounded-lg flex flex-col gap-4 transform transition-transform duration-200 hover:scale-105 hover:bg-gray-50 dark:hover:bg-zinc-700"
     >
       {children}
     </Link>

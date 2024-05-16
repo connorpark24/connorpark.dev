@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex w-full pt-10 border-x-[1px] border-gray-200 dark:border-zinc-800 dark:text-gray-300">
-      <div className="text-sm font-self-center md:w-1/3 max-w-2xl flex flex-row items-center justify-around mx-auto">
+    <nav className="flex py-10">
+      <div className="text-sm font-self-center w-96 max-w-2xl flex flex-row items-center justify-around mx-auto dark:text-white">
         <Link
           className="transform transition-transform duration-100 hover:scale-110"
           href="/"
