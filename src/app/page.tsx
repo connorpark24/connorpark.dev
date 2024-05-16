@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import headshot from "@/assets/headshot.png";
 import Card from "@/components/Card";
 import ContactIcons from "@/components/ContactIcons";
@@ -9,7 +10,7 @@ export default function Home() {
       <Image
         src={headshot}
         alt="Headshot"
-        className="border-gray-100 border-x-2 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-xl mb-12"
+        className="border-gray-100 border-x-2 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-2xl mb-12 dark:shadow-blue-800 shadow-blue-200"
       />
 
       <div className="text-5xl font-medium mb-4 dark:text-white">
@@ -24,9 +25,16 @@ export default function Home() {
       <div className="flex xl:flex-row flex-col gap-12">
         <div className="text-base flex flex-col gap-y-8 xl:w-3/5 leading-7 text-zinc-600 dark:text-zinc-400">
           <p>
-            I&apos; m a rising sophomore studying computer science at the
+            I&apos;m a rising sophomore studying Computer Science at the
             University of Michigan, also working toward minors in Mathematics
-            and Business.
+            and Business. At school, I&apos;m involved with{" "}
+            <Link className="font-semibold" href="https://v1michigan.com/">
+              V1 Michigan
+            </Link>{" "}
+            and{" "}
+            <Link className="font-semibold" href="https://www.upround.vc/">
+              UpRound Ventures.
+            </Link>
           </p>
           <p>
             Some of my interests include college football (Go Blue!), playing
