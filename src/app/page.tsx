@@ -47,7 +47,7 @@ export default function Home() {
             <p className="text-sm dark:text-white">Experience</p>
             <div className="flex flex-col gap-y-4">
               <div>
-                <p className="text-sm dark:text-white mb-2">Airgoods</p>
+                <p className="text-sm dark:text-white mb-2">Stealth Startup</p>
                 <div className="flex flex-row justify-between">
                   <p className="text-xs dark:text-zinc-400">
                     Software Engineer Intern
