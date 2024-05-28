@@ -67,6 +67,20 @@ export default function About() {
                 </div>
                 <p className="text-sm dark:text-white">Cooking</p>
               </div>
+              <div className="flex flex-row gap-x-4 items-center">
+                <div className="rounded-full w-10 h-10 shadow-md dark:shadow-blue-800 shadow-blue-200 flex items-center justify-center">
+                  <p className="text-xl">🏈</p>
+                </div>
+                <p className="text-sm dark:text-white">
+                  NCAA Football (Go Blue!)
+                </p>
+              </div>
+              <div className="flex flex-row gap-x-4 items-center">
+                <div className="rounded-full w-10 h-10 shadow-md dark:shadow-blue-800 shadow-blue-200 flex items-center justify-center">
+                  <p className="text-xl">📱</p>
+                </div>
+                <p className="text-sm dark:text-white">Tech</p>
+              </div>
             </div>
           </Card>
         </div>

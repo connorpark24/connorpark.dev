@@ -16,34 +16,21 @@ const projectData: Project[] = [
     link: "https://google.com",
     title: "UpRound Ventures Platform",
     description:
-      "Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Bibendum at varius vel pharetra vel.",
+      "A club platform for managing startup sourcing and deal flow for UpRound Ventures.",
     icon: <ComputerDesktopIcon className="w-5 h-5 dark:text-white" />,
   },
   {
     link: "https://google.com",
     title: "Winston",
     description:
-      "Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus.",
-    icon: <ComputerDesktopIcon className="w-5 h-5 dark:text-white" />,
-  },
-  {
-    link: "https://google.com",
-    title: "Startup Database",
-    description:
-      "Bibendum at varius vel pharetra vel. Vel fringilla est ullamcorper eget nulla facilisi.",
-    icon: <ComputerDesktopIcon className="w-5 h-5 dark:text-white" />,
-  },
-  {
-    link: "https://google.com",
-    title: "Startup Database",
-    description:
-      "Bibendum at varius vel pharetra vel. Vel fringilla est ullamcorper eget nulla facilisi.",
+      "An online quiz generator leveraging AI to create custom practice questions from lectures.",
     icon: <ComputerDesktopIcon className="w-5 h-5 dark:text-white" />,
   },
   {
     link: "https://google.com",
     title: "College Theme VSCode Extension",
-    description: "Bibendum at varius vel pharetra vel.",
+    description:
+      "A VSCode extension providing theme configurations inspired by college colors.",
     icon: <AcademicCapIcon className="w-5 h-5 dark:text-white" />,
   },
 ];
