@@ -10,7 +10,7 @@ export default function Home() {
       <Image
         src={headshot}
         alt="Headshot"
-        className="border-gray-100 border-x-2 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-2xl mb-12 dark:shadow-blue-800 shadow-blue-200"
+        className="border-gray-100 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-2xl mb-12 dark:shadow-blue-800 shadow-blue-200"
       />
 
       <div className="text-5xl font-medium mb-4 dark:text-white">
@@ -36,23 +36,22 @@ export default function Home() {
               UpRound Ventures.
             </Link>
           </p>
-          <p>
-            Some of my interests include college football (Go Blue!), playing
-            golf, cooking street food, and venture capital.
-          </p>
+          <p>I am from Northern Virginia.</p>
           <p>Feel free to reach out!</p>
         </div>
-        <div className="xl:w-2/5">
+        <div className="xl:w-2/5 flex flex-col gap-y-8">
           <Card>
             <p className="text-sm dark:text-white">Experience</p>
             <div className="flex flex-col gap-y-4">
               <div>
                 <p className="text-sm dark:text-white mb-2">Stealth Startup</p>
                 <div className="flex flex-row justify-between">
-                  <p className="text-xs dark:text-zinc-400">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400">
                     Software Engineer Intern
                   </p>
-                  <p className="text-xs dark:text-zinc-400">Date</p>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                    Date
+                  </p>
                 </div>
               </div>
               <div>
@@ -60,10 +59,12 @@ export default function Home() {
                   Spark RE Analytics LLC
                 </p>
                 <div className="flex flex-row justify-between">
-                  <p className="text-xs dark:text-zinc-400">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400">
                     Software Engineer Intern
                   </p>
-                  <p className="text-xs dark:text-zinc-400">Date</p>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                    Date
+                  </p>
                 </div>
               </div>
             </div>
