@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${inter.className} bg-gray-50 dark:bg-black  flex flex-col`}
       >
         <div className="flex justify-center fixed inset-0 lg:px-36 sm:px-16">
-          <div className="bg-white dark:bg-zinc-900 max-w-7xl w-full border-x-[1px] border-gray-200 dark:border-zinc-800"></div>
+          <div className="bg-white dark:bg-neutral-900 max-w-7xl w-full border-x-[1px] border-gray-200 dark:border-zinc-800"></div>
         </div>
 
         <div className="relative lg:px-36 sm:px-8">
