@@ -37,14 +37,14 @@ const projectData: Project[] = [
     icon: <AcademicCapIcon className="w-5 h-5 dark:text-white" />,
   },
   {
-    link: "https://github.com/connorpark24/upround-platform",
+    link: "https://github.com/connorpark24/refresher-plugin",
     title: "Obsidian Notes Refresher",
     description:
       "Plugin that uses AI to provide summaries on old notes in vault.",
     icon: <DocumentCheckIcon className="w-5 h-5 dark:text-white" />,
   },
   {
-    link: "https://github.com/connorpark24/upround-platform",
+    link: "https://github.com/connorpark24/personal-website",
     title: "Personal Website",
     description: "This website and blog. ",
     icon: <CpuChipIcon className="w-5 h-5 dark:text-white" />,

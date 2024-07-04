@@ -7,7 +7,7 @@ import ExperienceCard from "@/components/ExperienceCard";
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
-      <div className="relative inline-block bg-neutral-900 border-gray-100 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-2xl mb-12 dark:shadow-blue-600 shadow-blue-200">
+      <div className="relative inline-block dark:bg-neutral-900 bg-white border-gray-100 rounded-full sm:w-40 sm:h-40 w-32 h-32 shadow-2xl mb-12 dark:shadow-blue-600 shadow-blue-200">
         <Image
           src={headshot}
           alt="Headshot"
