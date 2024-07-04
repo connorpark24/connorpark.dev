@@ -1,5 +1,3 @@
-import Card from "@/components/Card";
-
 export default function About() {
   return (
     <div className="flex flex-col w-full pt-16">

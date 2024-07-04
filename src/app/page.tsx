@@ -38,7 +38,7 @@ export default function Home() {
               UpRound Ventures.
             </Link>
           </p>
-          <p>I am from Northern Virginia.</p>
+          <p>Feel free to reach out!</p>
         </div>
         <div className="xl:w-2/5 flex flex-col gap-y-8">
           <ExperienceCard />

@@ -2,7 +2,6 @@ import {
   ComputerDesktopIcon,
   AcademicCapIcon,
   PencilIcon,
-  Brain,
   DocumentCheckIcon,
   CpuChipIcon,
 } from "@heroicons/react/24/outline";
