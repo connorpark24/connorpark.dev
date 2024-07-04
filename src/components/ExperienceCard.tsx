@@ -11,7 +11,9 @@ export default function ExperienceCard() {
             <p className="text-xs text-zinc-600 dark:text-zinc-400">
               Software Engineer Intern
             </p>
-            <p className="text-xs text-zinc-600 dark:text-zinc-400">Date</p>
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">
+              May 2024 -{" "}
+            </p>
           </div>
         </div>
         <div>
@@ -20,7 +22,9 @@ export default function ExperienceCard() {
             <p className="text-xs text-zinc-600 dark:text-zinc-400">
               Software Engineer Intern
             </p>
-            <p className="text-xs text-zinc-600 dark:text-zinc-400">Date</p>
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">
+              June 2023 - May 2024
+            </p>
           </div>
         </div>
       </div>
