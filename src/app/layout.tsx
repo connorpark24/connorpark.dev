@@ -27,7 +27,7 @@ export default function RootLayout({
 
         <div className="relative lg:px-36 sm:px-8">
           <Navbar />
-          <div className="py-24 sm:px-24 px-8">{children}</div>
+          <div className="py-24 sm:px-24 px-12">{children}</div>
           <Footer />
         </div>
       </body>
