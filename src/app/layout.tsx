@@ -19,13 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gray-50 dark:bg-black  flex flex-col`}
+        className={`${inter.className} bg-neutral-50 dark:bg-black flex flex-col h-full w-screen`}
       >
         <div className="flex justify-center fixed inset-0 lg:px-36 sm:px-16">
-          <div className="bg-white dark:bg-neutral-900 max-w-7xl w-full border-x-[1px] border-gray-200 dark:border-zinc-800"></div>
+          <div className="bg-white dark:bg-neutral-900 w-full max-w-7xl border-x-[1px] border-neutral-200 dark:border-neutral-800"></div>
         </div>
 
-        <div className="relative lg:px-36 sm:px-8">
+        <div className="relative lg:px-36 sm:px-16 max-w-[98rem] mx-auto w-full">
           <Navbar />
           <div className="py-24 sm:px-24 px-12">{children}</div>
           <Footer />
