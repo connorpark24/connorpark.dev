@@ -4,6 +4,8 @@ import {
   PencilIcon,
   DocumentCheckIcon,
   CpuChipIcon,
+  CodeBracketIcon,
+  CommandLineIcon,
 } from "@heroicons/react/24/outline";
 import { ReactElement } from "react";
 
@@ -48,6 +50,19 @@ const projectData: Project[] = [
     title: "Personal Website",
     description: "This website and blog. ",
     icon: <CpuChipIcon className="w-5 h-5 dark:text-white" />,
+  },
+  {
+    link: "https://github.com/connorpark24/interpreter",
+    title: "Interpreter for Scripting Language",
+    description:
+      "Interpreter written in C++ for a custom scripting language that supports functions, variables, and more.",
+    icon: <CommandLineIcon className="w-5 h-5 dark:text-white" />,
+  },
+  {
+    link: "https://github.com/connorpark24/code-squish",
+    title: "Code Squisher",
+    description: "A tool that compresses code by removing blank lines.",
+    icon: <CodeBracketIcon className="w-5 h-5 dark:text-white" />,
   },
 ];
 
