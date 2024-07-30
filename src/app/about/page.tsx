@@ -5,28 +5,26 @@ export default function About() {
       <div className="flex xl:flex-row flex-col gap-12">
         <div className="text-base flex flex-col gap-y-8 xl:w-3/5 leading-7 text-neutral-800">
           <div>
-            <p className="dark:text-white mb-2">Classes Taken</p>
+            <p className="dark:text-white font-medium">Classes Taken</p>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Programming and Introductory Data Structures, Data Structures and
-              Algorithms, Intro to Computer Organization, Microprocessors and
-              Toys
+              Programming and Introductory Data Structures (EECS 280), Data
+              Structures and Algorithms (EECS 281), Intro to Computer
+              Organization (EECS 370), Microprocessors and Toys (ENGR 100)
             </p>
           </div>
           <div>
-            <p className="dark:text-white mb-2">Interests</p>
+            <p className="dark:text-white font-medium">Languages</p>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Programming and Introductory Data Structures, Data Structures and
-              Algorithms, Intro to Computer Organization, Microprocessors and
-              Toys
+              HTML/CSS/JavaScript, TypeScript, Python, C, C++, SQL, VBA
             </p>
           </div>
           <div>
-            <p className="dark:text-white mb-2">
-              Favorite Places I&apos;ve Traveled
+            <p className="dark:text-white font-medium">
+              Frameworks + Technologies
             </p>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Seoul, South Korea; Tokyo, Japan; Los Angeles, California;
-              Anchorage, Alaska
+              React, Next.js, Tailwind CSS, Node.js, Express, Flask, MongoDB,
+              Git
             </p>
           </div>
         </div>
