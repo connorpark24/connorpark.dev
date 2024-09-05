@@ -15,10 +15,10 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-5xl font-medium mb-4 dark:text-white">
+      <div className="text-5xl font-medium mb-4 dark:text-white tracking-tight">
         Connor Park
       </div>
-      <div className="text-lg mb-4 dark:text-white">
+      <div className="text-lg mb-4 dark:text-white ">
         Student at the University of Michigan
       </div>
 
