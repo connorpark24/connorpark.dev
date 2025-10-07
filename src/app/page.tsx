@@ -34,10 +34,10 @@ export default function Home() {
           <p className=" text-foreground ">Writing</p>
           <p className=" text-muted-foreground mt-0.5">Coming soon</p>
         </div>
-        <div className="flex flex-col mt-12 mb-12">
+        <div className="flex flex-col mt-32 mb-24">
           <div className="grid grid-cols-12 gap-2">
             {/* ROW 1 */}
-            <div className="col-span-3  h-32 lg:h-40 overflow-hidden rounded-md">
+            <div className="col-span-3  h-24 sm:h-32 lg:h-40 overflow-hidden rounded-md">
               <Image
                 src="/gallery/ollie-tongue.jpeg"
                 alt="ollie-tongue"
@@ -47,7 +47,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-5 h-32 lg:h-40 overflow-hidden rounded-md">
+            <div className="col-span-5 h-24 sm:h-32 lg:h-40 overflow-hidden rounded-md">
               <Image
                 src="/gallery/rosebowl.jpeg"
                 alt="rosebowl"
@@ -57,7 +57,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-4  h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-4  h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/yc-s25.jpeg"
                 alt="yc-s25"
@@ -67,7 +67,7 @@ export default function Home() {
               />
             </div>
             {/* ROW 2 */}
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/daeho.jpeg"
                 alt="daeho"
@@ -77,7 +77,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/ribeyes.jpeg"
                 alt="ribeyes"
@@ -87,7 +87,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/udon.jpeg"
                 alt="udon"
@@ -96,7 +96,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/tsujiki.jpeg"
                 alt="tsujiki"
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
 
             {/* ROW 3 */}
-            <div className="col-span-5  h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-5  h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/alaska.jpeg"
                 alt="alaska"
@@ -117,7 +117,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-4  h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-4  h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/florence.jpeg"
                 alt="florence"
@@ -127,7 +127,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/costarica-tree.jpeg"
                 alt="costarica-tree"
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
 
             {/* ROW 4 */}
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/rome-pasta.jpeg"
                 alt="rome-pasta"
@@ -147,7 +147,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/republique.jpeg"
                 alt="republique"
@@ -156,7 +156,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/nubiani.jpeg"
                 alt="nubiani"
@@ -165,7 +165,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <div className="col-span-3 h-32 lg:h-40  overflow-hidden rounded-md">
+            <div className="col-span-3 h-24 sm:h-32 lg:h-40  overflow-hidden rounded-md">
               <Image
                 src="/gallery/lindustrie.jpeg"
                 alt="lindustrie"

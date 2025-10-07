@@ -122,7 +122,17 @@
 }
 
 h1 {
-  border-bottom: 2px solid #ff6000;
   display: inline-block;
-  padding-bottom: 0.5px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff6000, #ff9148, #ffa264);
 }
