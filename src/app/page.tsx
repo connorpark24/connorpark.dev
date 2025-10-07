@@ -115,20 +115,28 @@ export default function Home() {
         </div>
         <div className="flex flex-col mt-32 mb-24">
           <div className="grid grid-cols-12 gap-2">
-            {galleryImages.map((image) => (
-              <div
-                key={image.alt}
-                className={`col-span-${image.colSpan} h-24 sm:h-32 lg:h-40 overflow-hidden rounded-md`}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                  width={500}
-                  height={500}
-                />
-              </div>
-            ))}
+            {galleryImages.map((image) => {
+              const colSpanClass = {
+                3: "col-span-3",
+                4: "col-span-4",
+                5: "col-span-5",
+              }[image.colSpan];
+
+              return (
+                <div
+                  key={image.alt}
+                  className={`${colSpanClass} h-24 sm:h-32 lg:h-40 overflow-hidden rounded-md`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
