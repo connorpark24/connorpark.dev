@@ -124,7 +124,7 @@
 h1 {
   display: inline-block;
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 0.5px;
 }
 
 h1::after {
