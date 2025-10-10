@@ -113,7 +113,7 @@ export default function Home() {
           <p className=" text-foreground ">Writing</p>
           <p className=" text-muted-foreground mt-0.5">Coming soon</p>
         </div>
-        <div className="flex flex-col mt-32 mb-24">
+        <div className="flex flex-col mt-24 sm:mt-56 mb-24">
           <div className="grid grid-cols-12 gap-2">
             {galleryImages.map((image) => {
               const colSpanClass = {
