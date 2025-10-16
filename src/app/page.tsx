@@ -82,7 +82,7 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-background flex flex-col items-center">
       <div className="p-4 w-full sm:w-3xl mt-28 mx-auto">
-        <h1 className="text-2xl tracking-tight font-medium">Connor Park</h1>
+        <h1 className="text-2xl font-medium">Connor Park</h1>
         <p className=" text-muted-foreground mt-2">
           Co-Founder, CTO @{" "}
           <Link href="https://useskope.com">Skope [YC S25]</Link>.
