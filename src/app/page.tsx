@@ -83,11 +83,11 @@ export default function Home() {
     <div className="h-screen w-screen bg-background flex flex-col items-center">
       <div className="p-4 w-full sm:w-3xl mt-28 mx-auto">
         <h1 className="text-3xl tracking-tight">Connor Park</h1>
-        <p className=" text-muted-foreground mt-2">
+        <p className=" text-muted-foreground mt-0.5">
           Co-Founder, CTO @{" "}
           <Link href="https://useskope.com">Skope [YC S25]</Link>.
         </p>
-        <div className="flex flex-row gap-x-2 mt-2 text-sm text-muted-foreground">
+        <div className="flex flex-row gap-x-2 mt-3 text-sm text-muted-foreground">
           <Link
             href="https://github.com/connorpark24"
             className="hover:text-muted-foreground/90"
@@ -108,10 +108,6 @@ export default function Home() {
             Ann Arbor. I enjoy trying new restaurants, playing golf, and
             watching Michigan Football.
           </p>
-        </div>
-        <div className="flex flex-col mt-12">
-          <p className=" text-foreground ">Writing</p>
-          <p className=" text-muted-foreground mt-0.5">Coming soon</p>
         </div>
         <div className="flex flex-col mt-24 sm:mt-56 mb-24">
           <div className="grid grid-cols-12 gap-2">
