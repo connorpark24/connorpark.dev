@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MapPin, Mail } from "lucide-react";
 
 const galleryImages = [
   {
@@ -82,28 +83,24 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-background flex flex-col items-center">
       <div className="p-4 w-full sm:w-3xl mt-28 mx-auto">
-        <h1 className="text-3xl tracking-tight">Connor Park</h1>
-        <p className=" text-muted-foreground mt-0.5">
+        <h1 className="text-2xl">Connor Park</h1>
+        <p className=" text-muted-foreground text-[15px] mt-0.5">
           Co-Founder, CTO @{" "}
           <Link href="https://useskope.com">Skope [YC S25]</Link>.
         </p>
-        <div className="flex flex-row gap-x-2 mt-3 text-sm text-muted-foreground">
-          <Link
-            href="https://github.com/connorpark24"
-            className="hover:text-muted-foreground/90"
-          >
-            GitHub
-          </Link>
-          <Link
-            href="https://linkedin.com/in/connor-park24"
-            className="hover:text-muted-foreground/90"
-          >
-            LinkedIn
-          </Link>
+        <div className="flex items-center gap-3 text-muted-foreground text-[13px] mt-1.5">
+          <div className="flex items-center gap-1.25">
+            <MapPin className="h-3 w-3" strokeWidth={1.5} />
+            <span>NYC</span>
+          </div>
+          <div className="flex items-center gap-1.5 ">
+            <Mail className="h-3 w-3" strokeWidth={1.5} />
+            <a href="mailto:connor@useskope.com">connor@useskope.com</a>
+          </div>
         </div>
         <div className="flex flex-col mt-12">
-          <p className=" text-foreground ">About</p>
-          <p className=" text-muted-foreground mt-0.5">
+          <p className=" text-foreground text-[15px]">About</p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5">
             I previously studied Computer Science at the University of Michigan,
             Ann Arbor. I enjoy trying new restaurants, playing golf, and
             watching Michigan Football.
