@@ -39,6 +39,7 @@ export function Nav() {
   return (
     <nav className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-50 flex-col gap-3 text-[13px] w-40">
       <SectionLink href="#home" label="Home" active={false} />
+      <SectionLink href="#work" label="Work" active={false} />
       <SectionLink href="#writing" label="Writing" active={false} />
       <SectionLink href="#food" label="Food" active={activeSection === "food"} />
       <SectionLink

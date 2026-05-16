@@ -68,16 +68,24 @@ export default function Home() {
         <section id="about" className="flex flex-col mt-12 scroll-mt-12">
           <p className=" text-foreground text-[15px] mb-1">About</p>
           <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
-            I'm currently co-founder and CTO at{" "}
-            <Link href="https://useskope.com">Skope [YC S25]</Link>.
-          </p>
-          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
             I previously studied Computer Science at the University of Michigan,
             Ann Arbor.
           </p>
           <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
             In my free time, I enjoy trying new restaurants, playing golf, and
             watching Michigan Football.
+          </p>
+        </section>
+        <section id="work" className="flex flex-col mt-12 scroll-mt-12">
+          <p className=" text-foreground text-[15px] mb-1">Work</p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
+            I'm currently co-founder and CTO at{" "}
+            <Link href="https://useskope.com">Skope [YC S25]</Link>, where we
+            implement AI for law firms.
+          </p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
+            I care most about designing simple interfaces, experiences, and
+            systems.
           </p>
         </section>
         <section id="writing" className="flex flex-col mt-12 scroll-mt-12">
