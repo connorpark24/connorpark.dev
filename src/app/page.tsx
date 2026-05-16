@@ -11,12 +11,6 @@ const foodImages = [
     description: "San Francisco, CA",
   },
   {
-    src: "/gallery/ribeyes.jpeg",
-    alt: "ribeyes",
-    title: "Ribeyes",
-    description: "",
-  },
-  {
     src: "/gallery/udon.jpeg",
     alt: "udon",
     title: "Udon",
@@ -64,18 +58,6 @@ const travelImages = [
     description: "Pasadena, CA",
   },
   {
-    src: "/gallery/yc-s25.jpeg",
-    alt: "yc-s25",
-    title: "YC S25",
-    description: "",
-  },
-  {
-    src: "/gallery/ollie-tongue.jpeg",
-    alt: "ollie-tongue",
-    title: "Ollie",
-    description: "",
-  },
-  {
     src: "/gallery/alaska.jpeg",
     alt: "alaska",
     title: "Alaska",
@@ -106,7 +88,12 @@ function Gallery({ images }: { images: GalleryImage[] }) {
   return (
     <div className="grid grid-cols-2 gap-x-3 gap-y-6">
       {images.map((image) => (
-        <div key={image.alt} className="flex flex-col">
+        <div
+          key={image.alt}
+          id={`item-${image.alt}`}
+          data-dial-item
+          className="flex flex-col scroll-mt-24"
+        >
           <div className="w-full aspect-square overflow-hidden rounded-sm">
             <Image
               src={image.src}
