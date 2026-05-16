@@ -2,92 +2,24 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Mail } from "lucide-react";
 import { Nav } from "./nav";
-
-const foodImages = [
-  {
-    src: "/gallery/daeho.jpeg",
-    alt: "daeho",
-    title: "Daeho",
-    description: "San Francisco, CA",
-  },
-  {
-    src: "/gallery/udon.jpeg",
-    alt: "udon",
-    title: "Udon",
-    description: "Tokyo, Japan",
-  },
-  {
-    src: "/gallery/tsujiki.jpeg",
-    alt: "tsujiki",
-    title: "Tsujiki",
-    description: "Tokyo, Japan",
-  },
-  {
-    src: "/gallery/rome-pasta.jpeg",
-    alt: "rome-pasta",
-    title: "Pasta",
-    description: "Rome, Italy",
-  },
-  {
-    src: "/gallery/republique.jpeg",
-    alt: "republique",
-    title: "République",
-    description: "Los Angeles, CA",
-  },
-  {
-    src: "/gallery/nubiani.jpeg",
-    alt: "nubiani",
-    title: "Nubiani",
-    description: "New York City, NY",
-  },
-  {
-    src: "/gallery/lindustrie.jpeg",
-    alt: "lindustrie",
-    title: "L'Industrie",
-    description: "New York City, NY",
-  },
-];
-
-const writings: { title: string; date: string; href: string }[] = [];
-
-const travelImages = [
-  {
-    src: "/gallery/rosebowl.jpeg",
-    alt: "rosebowl",
-    title: "Rose Bowl 2024",
-    description: "Pasadena, CA",
-  },
-  {
-    src: "/gallery/alaska.jpeg",
-    alt: "alaska",
-    title: "Alaska",
-    description: "",
-  },
-  {
-    src: "/gallery/florence.jpeg",
-    alt: "florence",
-    title: "Florence",
-    description: "Italy",
-  },
-  {
-    src: "/gallery/costarica-tree.jpeg",
-    alt: "costarica-tree",
-    title: "La Fortuna",
-    description: "Costa Rica",
-  },
-];
+import foodImages from "@/data/food.json";
+import travelImages from "@/data/travel.json";
 
 type GalleryImage = {
   src: string;
   alt: string;
   title: string;
   description: string;
+  date: string;
 };
 
+const writings: { title: string; date: string; href: string }[] = [];
+
 function Gallery({ images }: { images: GalleryImage[] }) {
+  const sorted = [...images].sort((a, b) => b.date.localeCompare(a.date));
   return (
     <div className="grid grid-cols-2 gap-x-3 gap-y-6">
-      {images.map((image) => (
+      {sorted.map((image) => (
         <div
           key={image.alt}
           id={`item-${image.alt}`}
@@ -122,11 +54,7 @@ export default function Home() {
       <div className="p-4 w-full sm:w-3xl mt-16 sm:mt-28 mx-auto">
         <section id="home" className="flex flex-col mt-2 scroll-mt-2">
           <h1 className="text-2xl">Connor Park</h1>
-          <p className=" text-muted-foreground text-[15px] mt-0.5">
-            Co-Founder, CTO @{" "}
-            <Link href="https://useskope.com">Skope [YC S25]</Link>.
-          </p>
-          <div className="flex items-center gap-3 text-muted-foreground text-[13px] mt-1.5">
+          <div className="flex items-center gap-3 text-muted-foreground text-[15px] mt-0.5">
             <div className="flex items-center gap-1.25">
               <MapPin className="h-3 w-3" strokeWidth={1.5} />
               <span>NYC</span>
@@ -138,15 +66,22 @@ export default function Home() {
           </div>
         </section>
         <section id="about" className="flex flex-col mt-12 scroll-mt-12">
-          <p className=" text-foreground text-[15px]">About</p>
-          <p className=" text-muted-foreground text-[15px] mt-0.5">
+          <p className=" text-foreground text-[15px] mb-1">About</p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
+            I'm currently co-founder and CTO at{" "}
+            <Link href="https://useskope.com">Skope [YC S25]</Link>.
+          </p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
             I previously studied Computer Science at the University of Michigan,
-            Ann Arbor. I enjoy trying new restaurants, playing golf, and
+            Ann Arbor.
+          </p>
+          <p className=" text-muted-foreground text-[15px] mt-0.5 mb-3">
+            In my free time, I enjoy trying new restaurants, playing golf, and
             watching Michigan Football.
           </p>
         </section>
         <section id="writing" className="flex flex-col mt-12 scroll-mt-12">
-          <p className="text-foreground text-[15px] mb-4">Writing</p>
+          <p className="text-foreground text-[15px] mb-1">Writing</p>
           {writings.length === 0 ? (
             <p className="text-muted-foreground text-[15px]">
               Nothing yet — coming soon.

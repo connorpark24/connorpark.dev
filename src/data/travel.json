@@ -1,0 +1,30 @@
+[
+  {
+    "src": "/travel/rosebowl.jpeg",
+    "alt": "rosebowl",
+    "title": "Rose Bowl 2024",
+    "description": "Pasadena, CA",
+    "date": ""
+  },
+  {
+    "src": "/travel/alaska.jpeg",
+    "alt": "alaska",
+    "title": "Alaska",
+    "description": "",
+    "date": ""
+  },
+  {
+    "src": "/travel/florence.jpeg",
+    "alt": "florence",
+    "title": "Florence",
+    "description": "Italy",
+    "date": ""
+  },
+  {
+    "src": "/travel/costarica-tree.jpeg",
+    "alt": "costarica-tree",
+    "title": "La Fortuna",
+    "description": "Costa Rica",
+    "date": ""
+  }
+]
