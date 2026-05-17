@@ -3,7 +3,12 @@ import Image from "next/image";
 import { MapPin, Mail } from "lucide-react";
 import { Nav } from "./nav";
 import foodImages from "@/data/food.json";
+import cookingImages from "@/data/cooking.json";
 import travelImages from "@/data/travel.json";
+
+// Preserved for commented-out sections below.
+void cookingImages;
+void travelImages;
 
 type GalleryImage = {
   src: string;
@@ -118,10 +123,14 @@ export default function Home() {
           <p className="text-foreground text-[15px] mb-3">Food</p>
           <Gallery images={foodImages} />
         </section>
-        <section id="travel" className="flex flex-col mt-24 scroll-mt-24 mb-24">
+        {/* <section id="cooking" className="flex flex-col mt-24 scroll-mt-24 mb-24">
+          <p className="text-foreground text-[15px] mb-3">Cooking</p>
+          <Gallery images={cookingImages} />
+        </section> */}
+        {/* <section id="travel" className="flex flex-col mt-24 scroll-mt-24 mb-24">
           <p className="text-foreground text-[15px] mb-3">Travel</p>
           <Gallery images={travelImages} />
-        </section>
+        </section> */}
       </div>
     </div>
   );
