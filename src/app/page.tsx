@@ -16,10 +16,9 @@ type GalleryImage = {
 const writings: { title: string; date: string; href: string }[] = [];
 
 function Gallery({ images }: { images: GalleryImage[] }) {
-  const sorted = [...images].sort((a, b) => b.date.localeCompare(a.date));
   return (
-    <div className="grid grid-cols-2 gap-x-3 gap-y-6">
-      {sorted.map((image) => (
+    <div className="grid grid-cols-2 gap-x-3 gap-y-8">
+      {images.map((image) => (
         <div
           key={image.alt}
           id={`item-${image.alt}`}
@@ -35,7 +34,7 @@ function Gallery({ images }: { images: GalleryImage[] }) {
               height={1000}
             />
           </div>
-          <p className="text-foreground text-[15px] mt-3">{image.title}</p>
+          <p className="text-foreground text-[15px] mt-2.5">{image.title}</p>
           {image.description && (
             <p className="text-muted-foreground text-[13px]">
               {image.description}
@@ -116,11 +115,11 @@ export default function Home() {
           )}
         </section>
         <section id="food" className="flex flex-col mt-12 scroll-mt-12">
-          <p className="text-foreground text-[15px] mb-4">Food</p>
+          <p className="text-foreground text-[15px] mb-3">Food</p>
           <Gallery images={foodImages} />
         </section>
         <section id="travel" className="flex flex-col mt-24 scroll-mt-24 mb-24">
-          <p className="text-foreground text-[15px] mb-4">Travel</p>
+          <p className="text-foreground text-[15px] mb-3">Travel</p>
           <Gallery images={travelImages} />
         </section>
       </div>
