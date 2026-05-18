@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Mail } from "lucide-react";
 import { Nav } from "./nav";
 import foodImages from "@/data/food.json";
 import cookingImages from "@/data/cooking.json";
@@ -58,15 +57,10 @@ export default function Home() {
       <div className="p-4 w-full sm:w-3xl mt-16 sm:mt-28 mx-auto">
         <section id="home" className="flex flex-col mt-2 scroll-mt-2">
           <h1 className="text-2xl">Connor Park</h1>
-          <div className="flex items-center gap-3 text-muted-foreground text-[15px] mt-0.5">
-            <div className="flex items-center gap-1.25">
-              <MapPin className="h-3 w-3" strokeWidth={1.5} />
-              <span>NYC</span>
-            </div>
-            <div className="flex items-center gap-1.5 ">
-              <Mail className="h-3 w-3" strokeWidth={1.5} />
-              <a href="mailto:connor@useskope.com">connor@useskope.com</a>
-            </div>
+          <div className="flex items-center gap-1 text-muted-foreground text-[15px] mt-0.5">
+            <span>NYC</span>
+            <span>|</span>
+            <a href="mailto:connor@useskope.com">connor@useskope.com</a>
           </div>
         </section>
         <section id="about" className="flex flex-col mt-12 scroll-mt-12">
